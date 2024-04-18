@@ -68,7 +68,7 @@ namespace ApiCatalogoClientes.Controllers
             return Ok(result);
         }
 
-        [HttpPatch]
+        [HttpPut]
         [Route("[action]")]
         public async Task<IActionResult> Update(CreateUpdateClientRequest request)
         {
